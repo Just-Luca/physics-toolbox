@@ -1,0 +1,36 @@
+#include <cstdlib>
+#include <cmath>
+
+#include "funzioni.h"
+
+#include <TMath.h>
+
+using namespace std;
+double fun1 (double* x, double* par){
+  return ((2*par[0])/(sqrt(M_PI)))*sqrt(x[0])*exp(-x[0]);
+}
+
+double fun2 (double* x, double* par){
+  return par[0]*x[0]*exp(-par[1]*x[0]);
+}
+
+double fun3 (double* x, double* par){
+  return par[0]*x[0]*exp(-2*x[0])*exp(-(pow((x[0]-par[1]),2)
+					/(2*par[2]*par[2])));
+}
+
+
+bool testCompatibility (double& pvalue, double meas1, double err1,
+			  double meas2, double significance){
+  double stat;
+  stat   = fabs((meas1 - meas2) / err1);
+  
+  pvalue = TMath::Erfc(stat/sqrt(2));
+
+  if (pvalue > significance){
+    return true;
+  } else {
+    return false;
+  }
+}
+

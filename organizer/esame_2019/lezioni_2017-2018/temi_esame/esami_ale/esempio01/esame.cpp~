@@ -1,0 +1,19 @@
+#include <iostream>
+
+#define N 10000
+
+int main () {
+  //inizializzo il seed del generatore di numeri pseudocasuali con il tempo
+  //cosi' che a ogni esecuzione generi numeri diversi
+  srand (time(NULL));
+
+  double [N] data; //vettore che contiene i numeri generati
+
+  //riempio il vettore con numeri generati pseudocasualmente con una
+  //distribuzione uniforme
+  for (int i = 0; i < N; i++){
+    double [i] = rand_range (0,1)
+      }
+}
+  
+  

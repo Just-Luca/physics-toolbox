@@ -1,0 +1,19 @@
+#include <iostream>
+#include <fstream>
+
+#include "funzioni.h"
+
+#include <cstdlib>
+
+#include <TH1D.h>
+#include <TF1.h>
+#include <TCanvas.h>
+#include <TApplication.h>
+#include <TStyle.h>
+
+using namespace std;
+
+int main (){
+
+
+}

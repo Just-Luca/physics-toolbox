@@ -1,0 +1,8 @@
+#ifndef funzioni_h
+#define funzioni_h
+
+bool testCompatibility (double& pvalue, double meas1, double err1,
+			double meas2, double significance);
+
+
+#endif

@@ -1,0 +1,11 @@
+#ifndef libreria_h
+#define libreria_h
+
+void MinMax (int* data, int dim, int& min, int& max);
+//funzione che invidua il massimo e il minimo dei valori contenuti in un vettore
+
+double rand_range(double min, double max);
+//generatore di numeri pseudo-casuali uniformemente disribuiti
+//in un intervallo.
+
+#endif
