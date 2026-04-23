@@ -20,7 +20,7 @@ int main () {
     }
 
   else if (x == 2) {
-      std::cout << "x vale DUE" << std::endl;
+      std::cout << "x is TWO" << std::endl;
     }
 
   else {
