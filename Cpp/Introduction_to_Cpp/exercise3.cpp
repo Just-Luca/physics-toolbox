@@ -12,20 +12,20 @@ int main () {
     
   int x;
 
-  std::cout << "Choose, 1 or 2: " << std::endl;
+  std::cout << "Choose, 1 or 2:" << std::endl;
   std::cin >> x;
 
   if (x == 1) {
-        std::cout << "x is ONE" << std::endl;
-    }
+    std::cout << "x is ONE" << std::endl;
+  }
 
   else if (x == 2) {
-      std::cout << "x is TWO" << std::endl;
-    }
+    std::cout << "x is TWO" << std::endl;
+  }
 
   else {
-      std::cout << "x non vale ne' UNO, ne' DUE" << std::endl;
-    }
+    std::cout << "x non vale ne' UNO, ne' DUE" << std::endl;
+  }
   
   return 0;
 }
