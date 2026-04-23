@@ -16,7 +16,7 @@ int main () {
   std::cin >> x;
 
   if (x == 1) {
-        std::cout << "x vale UNO" << std::endl;
+        std::cout << "x is ONE" << std::endl;
     }
 
   else if (x == 2) {
