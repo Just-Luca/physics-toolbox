@@ -1,6 +1,4 @@
 /*
-
-c++ -o exercise3 exercise3.cpp
  
 Exercise: write a code which asks user to insert one NATURAL number between 1 and 2, and then it prints to terminal either the chosen value, or an error message if some other natural number is inserted
 
@@ -24,7 +22,7 @@ int main () {
   }
 
   else {
-    std::cout << "x non vale ne' UNO, ne' DUE" << std::endl;
+    std::cout << "x is neither ONE nor TWO" << std::endl;
   }
   
   return 0;

@@ -1,6 +1,4 @@
 /*
-
-c++ -o exercise1 exercise1.cpp
  
 Exercise: write a code so that, given two natural numbers from terminal, it prints the ratio of the two
 
@@ -20,8 +18,7 @@ int main () {
 
   float ratio = (float)number1 / number2;
 
-  std::cout << "The ratio is: "
-      << ratio << std::endl;
+  std::cout << "The ratio is: " << ratio << std::endl;
 
   return 0;
 }
