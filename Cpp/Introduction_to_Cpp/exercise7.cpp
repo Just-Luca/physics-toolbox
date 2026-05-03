@@ -1,6 +1,6 @@
 /*
 
-Esercizio: write a program to calculate the arithmetic mean of a series of numbers entered from the keyboard. Entering a specific value equal to "0" indicates the end of data input
+Exercise: write a program to calculate the arithmetic mean of a series of numbers entered from the keyboard. Entering a specific value equal to "0" indicates the end of data input
 
 */
 
