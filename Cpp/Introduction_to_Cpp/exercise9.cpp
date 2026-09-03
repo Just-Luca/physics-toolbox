@@ -1,6 +1,7 @@
 /*
 
 Exercise: declare a pointer and then try to assign a numeric value directly to it. What happens? Why?
+
 */
 
 #include <iostream>
