@@ -8,13 +8,13 @@ Exercise: write a program that assigns the value of one variable to another usin
 
 int main() {
     
-    int balance;      // Dichiara un int
-    int value;        // Dichiara altro int
-    int* balance_ptr; // Dichiara un puntatore ad un int
+    int balance;      // declare an int
+    int value;        // declare another int
+    int* balance_ptr; // declare a pointer to an int
 
-    balance = 3200;         // Assegna un valore a balance
-    balance_ptr = &balance; // Assegna come valore a balance_ptr l'indirizzo della variabile balance
-    value = *balance_ptr;   // Assegna il valore del puntatore balance_ptr alla variabile value
+    balance = 3200;         // assign a value to balance
+    balance_ptr = &balance; // assign the address of the balance variable to balance_ptr
+    value = *balance_ptr;   // assign the value of the balance_ptr pointer to the value variable
 
     std::cout << "balance is: " << balance << '\n';
     std::cout << "balance_ptr is: " << balance_ptr << '\n';
