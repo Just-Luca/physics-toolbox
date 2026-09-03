@@ -21,4 +21,4 @@ int main () {
   std::cout << "The ratio is: " << ratio << std::endl;
 
   return 0;
-  }
+}

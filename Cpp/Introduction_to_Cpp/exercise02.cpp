@@ -21,4 +21,4 @@ int main () {
   std::cout << "sine of pi/4 is: " << sin_45  << std::endl;
 
   return 0;
-  }
+}
