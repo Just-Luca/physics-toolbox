@@ -36,20 +36,49 @@ bool solve2ndDegree(double* par, double* x) {
   return true;
 }
 
+// int main (int argc, char** argv) {
+
+//   double par[3];
+//   double x[2];
+//   par[0] = 1;
+//   par[1] = 2;
+//   par[2] = 3;
+  
+//   bool solved = solve2ndDegree(par,x);
+  
+//   if (solved == true)
+//     std::cout << "Equation solved. x1 = " << x[0] << " x2 = " << x[1] << std::endl;
+//   else
+//     std::cout << "Equation not solved" << std::endl;
+  
+//   return 0;
+// }
+
 int main (int argc, char** argv) {
 
   double par[3];
   double x[2];
-  par[0] = 1;
-  par[1] = 2;
-  par[2] = 3;
+
+  std::cout << std::endl;
+  std::cout << "Insert any three numbers as parameters for the quadratic equation ax2 + bx + c = 0: " << std::endl;
   
+  std::cout << "a = "; 
+  std::cin >> par[0]; 
+
+  std::cout << "b = ";
+  std::cin >> par[1];
+
+  std::cout << "c = ";
+  std::cin >> par[2];
+  std::cout << std::endl;
+
   bool solved = solve2ndDegree(par,x);
   
   if (solved == true)
-    std::cout << "Equation solved. x1 = " << x[0] << " x2 = " << x[1] << std::endl;
+    std::cout << "Equation solved: x1 = " << x[0] << "; x2 = " << x[1] << std::endl;
   else
-    std::cout << "Equation not solved" << std::endl;
+    std::cout << "Equation not solved." << std::endl;
   
   return 0;
 }
+

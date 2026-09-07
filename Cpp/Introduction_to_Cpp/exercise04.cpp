@@ -18,10 +18,10 @@ int main () {
 
     while (true) {
 
-        std::cout << "Write a number: (" << EXIT << " to EXIT): ";
+        std::cout << "Write an integer number: (" << EXIT << " to EXIT): ";
         std::cin >> i;
         if (i == EXIT) break;
-        else if (i%2 == 0) even i);
+        else if (i%2 == 0) even(i);
         else odd(i);
     }
 
@@ -34,5 +34,5 @@ void odd (int a) {
 }
 
 void even (int a) {
-    std::cout << "The number is even n";
+    std::cout << "The number is even.\n";
 }
