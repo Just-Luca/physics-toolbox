@@ -1,62 +1,48 @@
 /*
 
-Exercise: rewrite the createArray function without using the return statement
+Exercise: write a program that, given an array of n random integers, orders it from the largest to the smallest
 
 */
 
 #include <iostream>
+#define DIM 10
 
-// ##########################
-// # Solution with pointers #
-// ##########################
-void createArray (int dim, int** array) {
-  *array = new int[dim];
+void SortArray(double* myArray, int dim) {
+  bool flag = true;
+  
+  for (int i = 1; (i < dim && flag == true); i++) {
+    flag = false;
+    
+    for (int j = 0; j < (dim - i); j++) {
+      if (myArray[j+1] > myArray[j]) { 
+        int temp     = myArray[j];
+        myArray[j]   = myArray[j+1];
+        myArray[j+1] = temp;
+
+        flag = true;
+      }
+    }
+  }
 }
 
-// ############################
-// # Solution with references #
-// ############################
-// void createArray (int dim, int*& array)
-// {
-//   array = new int[dim];
-// }
 
-int main() {
-  int dim = 0;
-  std::cout << "Insert the dimension of the array: ";
-  std::cin >> dim;
-
-  if (dim < 0) {
-    std::cout << "Negative number" << std::endl;
-    return -1;
-  }
-
-  // ###################################
-  // # Dynamic allocation of the array #
-  // ###################################
-  int* vec;
-
-  // ##########################
-  // # Solution with pointers #
-  // ##########################
-  createArray(dim,&vec);
-
-  // ############################
-  // # Solution with references #
-  // ############################
-  // createArray(dim,vec);
+int main (int argc, char** argv) {
+  int dim = DIM;
+  double* data = new double[dim];
   
-  // Fill the array
-  for (int i = 0; i < dim; ++i) {
-    vec[i] = i+1;
+  std::cout << "Un-sorted values: " << std::endl;
+  for (int i = 0; i < dim; i++) {
+    data[i] = i;
+    std::cout << "Val " << i << " = " << data[i] << std::endl;
   }
 
-  // Print the elements of the array
-  for (int i = 0; i < dim; ++i) {
-    std::cout << "Content of the cell " << i << " : " << vec[i] << std::endl;
+  SortArray(data, dim);
+  std::cout << "\nSorted values: " << std::endl;
+  for (int i = 0; i < dim; i++) {
+    std::cout << "Val " << i << " = " << data[i] << std::endl;
   }
-
-  delete[] vec;
-
+ 
+  delete[] data;
+  
   return 0;
 }
