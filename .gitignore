@@ -2,3 +2,5 @@ desk/
 organizer/
 .vscode
 *.exe
+*.env
+*.venv
