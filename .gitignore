@@ -1,5 +1,6 @@
 desk/
 organizer/
+root_env/
 .vscode
 *.exe
 *.env
